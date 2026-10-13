@@ -15,9 +15,9 @@ on:
        default: 'QA'
        type: choice
        options:
-        - QA
-       - stage
-        - dev
+          - QA
+              - stage
+                 - dev
 
 jobs:
   test:
