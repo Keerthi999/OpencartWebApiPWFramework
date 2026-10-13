@@ -9,15 +9,15 @@ on:
     branches: [main]
   workflow_dispatch:
     inputs:
-    environment:
+      environment:
         description: 'Select environment'
-       required: true
-       default: 'QA'
-       type: choice
-       options:
+        required: true
+        default: 'QA'
+        type: choice
+        options:
           - QA
-              - stage
-                 - dev
+          - stage
+          - dev
 
 jobs:
   test:
